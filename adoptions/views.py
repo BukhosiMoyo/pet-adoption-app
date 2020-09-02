@@ -16,5 +16,9 @@ def pet_details(request, pet_id):
         pet = Pet.objects.get(id=pet_id)
     except Pet.DoesNotExist:
         raise Http404('Pet Not found')
-    context={}
+    context={'pet':pet}
     return render(request, 'adoptions/pet_details.html', context)
+
+def aboutAuthor(request):
+    context={}
+    return render(request, 'adoptions/about.html', context)

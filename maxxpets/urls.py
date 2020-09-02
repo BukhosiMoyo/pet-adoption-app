@@ -24,6 +24,7 @@ urlpatterns = [
 
     path('', views.home, name='home'),
     path('pet_details/<int:pet_id>/', views.pet_details, name='pet_details'),
+    path('about_author/', views.aboutAuthor, name='about'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

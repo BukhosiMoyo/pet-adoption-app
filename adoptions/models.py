@@ -8,7 +8,7 @@ class Pet(models.Model):
     ]
 
     name = models.CharField(max_length=100)
-    subitter = models.CharField(max_length=100, null=True, blank=True)
+    submitter = models.CharField(max_length=100, null=True, blank=True)
     species = models.CharField(max_length=100)
     breed = models.CharField(max_length=100)
     description = models.TextField(blank=True)
