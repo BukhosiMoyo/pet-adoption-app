@@ -6,33 +6,34 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Bukhosi Pet Adoptions</title>
-    <meta name="description" content="A high-quality &amp; free Bootstrap admin dashboard template pack that comes with lots of templates and components.">
+    <meta name="description" content="The is a pet adoption app">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">    
+    <link rel="preconnect" href="{% static 'css/all.css' %}" >
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">    
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" >    
     <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href=" {% static 'styles/shards-dashboards.1.1.0.min.css' %} ">
     <link rel="stylesheet"  href=" {% static 'styles/extras.1.1.0.min.css' %} ">
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script async defer src="{% static 'js/buttons.js' %}"></script>
   </head>
 
   <body class="d-flex flex-column min-vh-100" class="  h-100">
-
+Bukhosi Moyo
     {% block content %}
     
       
     {% endblock content %}
 
 
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-      <script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
+      <script src="{% static 'js/jquery-3.3.1.min.js' %}" ></script>
+      <script src="{% static 'js/popper.min.js' %}" ></script>
+      <script src="{% static 'css/bootstrap.min.css' %}" ></script>
+      <script src="{% static 'js/Chart.min.js' %}"></script>
+      <script src="{% static 'js/shards.min.js' %}"></script>
+      <script src="{% static 'js/jquery.sharrre.min.js' %}"></script>
       <script src=" {% static 'scripts/extras.1.1.0.min.js' %} "></script>
       <script src=" {% static 'scripts/shards-dashboards.1.1.0.min.js' %} "></script>
       <script src=" {% static 'scripts/app/app-blog-overview.1.1.0.js' %} "></script>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="{% static 'js/jquery-3.3.1.slim.min.js' %}" ></script>
     </body>
 </html>

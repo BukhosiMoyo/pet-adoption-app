@@ -110,7 +110,7 @@
                                 {% endif  %}
 
                                 <h6 class="d-flex mb-1">
-                                    <strong class="mr-1" style="font-weight: bold;">Submitted by:</strong> {{ pet.submitter }}
+                                    <strong class="mr-1" style="font-weight: bold;">Submitted by:</strong> {{ submitter.name }}
                                 </h6>
 
                                 <h6 class="d-flex mb-1">
@@ -120,15 +120,17 @@
                                 <h6 class="d-flex mb-1">
                                     <strong class="mr-1" style="font-weight: bold;">Description:</strong>
                                 </h6>    
-                                <p>{{ pet.description }}</p>
-
-                                    <a class="btn btn-sm btn-white mb-2" href="#">
-                                        <i class="fa fa-bookmark mr-1"></i> Save </a>
-                                    <a class="btn btn-sm btn-primary ml-3 mb-2" href="#">
-                                        <i class="fa fa-share mr-1"></i> Share </a>
-                                    <br>
+                                <p>
+                                    {{ pet.description }}
+                                </p>
+                                <a class="btn btn-sm btn-white mb-2" href="#">
+                                    <i class="fa fa-bookmark mr-1"></i> Save 
+                                </a>
+                                <a class="btn btn-sm btn-primary ml-3 mb-2" href="#">
+                                    <i class="fa fa-share mr-1"></i> Share 
+                                </a>
+                                <br>
                             </div>
-                            
                         </div>
                     </div>
                 </li>
